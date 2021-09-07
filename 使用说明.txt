@@ -1,9 +1,9 @@
 1、在以下网络中下载NJUST3D Dataset至主文件夹，直接解压。
 URL: https://b2share.eudat.eu/records/1de9c6e485344ccaa4ff1e6c47c6196b
 
-2、运行“gen_321data_njust.py”，生成 .npy 后缀数据文件。
+2、创建“data”文件夹，运行“gen_321data_njust.py”，生成 .npy 后缀数据文件。
 
-3、运行“train321.py”在NJUST3D数据集上训练，生成新的权重文件。
+3、创建“models”文件夹，运行“train321.py”在NJUST3D数据集上训练，生成新的权重文件。
 
 4、运行“realtime.py”加载权重文件，实现实时检测。
 注：因为每个人的实时数据获取方式不同，故我们未提供读取实时数据的code，读者需编写自己的数据获取code再调用”Processor“方法进行实时检测。
